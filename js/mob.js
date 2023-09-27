@@ -5,7 +5,7 @@ if (/Mobi/.test(navigator.userAgent) && !/iPad/.test(navigator.userAgent)) {
     const logoElement = document.querySelector('.logo');
     const imageElement = document.querySelector('.hero-image');
     const divElement = document.querySelector('.hero-image');
-    const buttonElement = document.querySelector('.hero-image');
+    const buttonElement = document.querySelector('.hero-button');
   
     menuElement.classList.remove('menu-items');
     menuElement.classList.add('menu-items-mob');

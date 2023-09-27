@@ -72,8 +72,6 @@
     padding-right: 10px;
   }
   
-  
-  
   .logo-mob::before {
     content: "";
     position: absolute;

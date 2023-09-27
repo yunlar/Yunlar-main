@@ -1,9 +1,0 @@
-.hero-image-mob {
-    margin-top: -400px;
-    margin-left: -15vw;
-    height: 70vw;
-  }
-
-  .hero-div-mob {
-    padding-top: 30vh;
-  }

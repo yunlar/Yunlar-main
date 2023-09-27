@@ -12,29 +12,43 @@
   }
 
   .hero-image {
-    height: 60vh;
+    height: 50vh;
     margin-left: -5vw;
+    margin-top: -40px;
+    margin-bottom: 40px;
   }
 
   h1 {
     color: var(--text);
-    font-size: 70pt;
+    font-size: 80pt;
     cursor: default;
+    font-family: var(--font);
+    font-weight: 400;
   }
 
-  button {
+  .hero-button {
     all: unset;
     background-color: var(--primary);
-    padding: 10px;
+    padding: 20px;
     font-size: 40pt;
+    font-weight: 400;
     font-family: var(--font);
     text-decoration: none;
     color: var(--background);
     border-radius: 20px;
-    box-shadow: 0px 0px 40px 10px var(--primary);
+    box-shadow: 0px 0px 40px 10px var(--primarytr);
     cursor: pointer;
   }
 
   a {
     all: unset;
+  }
+
+  .order {
+    padding-top: 100px;
+  }
+
+  .info-order {
+    color: var(--text);
+    font-family: var(--font);
   }

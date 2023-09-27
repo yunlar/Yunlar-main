@@ -53,25 +53,25 @@
   .item1-on {
     background-color: var(--primarytr);
     margin-right: 10px;
-    box-shadow: 0px 0px 30px -7px var(--primary);
+    box-shadow: 0px 0px 30px -7px var(--primarytr);
   }
   
   .item2-on {
     background-color: var(--primarytr);
     margin-right: 10px;
-    box-shadow: 0px 0px 30px -7px var(--primary);
+    box-shadow: 0px 0px 30px -7px var(--primarytr);
   }
   
   .item3-on {
     background-color: var(--primarytr);
     margin-right: 10px;
-    box-shadow: 0px 0px 30px -7px var(--primary);
+    box-shadow: 0px 0px 30px -7px var(--primarytr);
   }
   
   .item4-on {
     background-color: var(--primarytr);
     margin-right: 10px;
-    box-shadow: 0px 0px 30px -7px var(--primary);
+    box-shadow: 0px 0px 30px -7px var(--primarytr);
   }
   
   .hamburger-icon {
