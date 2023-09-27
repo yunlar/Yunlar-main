@@ -7,7 +7,7 @@
 
   .hero-div-mob {
     padding-top: 24vh;
-    
+    font-family: var(--font);
   }
 
   .hero-button-mob {
