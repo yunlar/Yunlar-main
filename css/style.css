@@ -1,0 +1,40 @@
+  body {
+    background-color: var(--background);
+  }
+
+  .hero-div {
+    padding-top: 8vh;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-image {
+    height: 60vh;
+    margin-left: -5vw;
+  }
+
+  h1 {
+    color: var(--text);
+    font-size: 70pt;
+    cursor: default;
+  }
+
+  button {
+    all: unset;
+    background-color: var(--primary);
+    padding: 10px;
+    font-size: 40pt;
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--background);
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 10px var(--primary);
+    cursor: pointer;
+  }
+
+  a {
+    all: unset;
+  }
