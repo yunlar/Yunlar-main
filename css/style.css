@@ -2,7 +2,7 @@ h1 {
     z-index: 1;
     font-size: 80pt;
     font-family: var(--font);
-    margin-top: -550px;
+    margin-top: -400px;
   }
 
   h2 {
@@ -54,7 +54,8 @@ h1 {
   font-family: var(--font);
   font-size: 20pt;
   color: var(--text);
-  background-color: rgba(0, 0, 0, 0.333);
+  background-color: rgba(8, 0, 255, 0.624);
   border-radius: 30px;
-
+  margin-bottom: 60px;
+  cursor: pointer;
 }
