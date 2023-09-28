@@ -12,8 +12,8 @@
     right: 0;
     top: 0;
     z-index: 999;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: saturate(1.8) blur(20px);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: saturate(1.8) blur(100px);
     border-bottom: 1px solid var(--primary);
   }
   
@@ -38,11 +38,11 @@
   
   .menu-items a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--text);
     font-family: var(--font);
     font-size: 30pt;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: 700;
     transition: all ease-in-out 100ms;
   }
   
