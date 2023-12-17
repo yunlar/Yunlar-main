@@ -54,7 +54,7 @@ body {
   width: 100%;
   max-width: 70px;
   max-height: 70px;
-  border-radius: 9.5mm;
+  min-width: 70px;
   margin: 20px;
 }
 
@@ -71,4 +71,34 @@ h2 {
 
 .text {
   margin-left: 40px;
+}
+
+.e2 {
+  all: unset;
+  position: fixed;
+  background-color: var(--gray-70);
+  padding: 10px 20px;
+  border-radius: 999px;
+  margin-top: -50px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border: 1.5px solid var(--gray-70);
+  font-weight: bold;
+}
+
+.target {
+  width:40px;
+  padding: 10px;
+  margin-right: -80px;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.target-clicked {
+  background-color: var(--rood-50) !important;
+  box-shadow: 0 0 30px -13px var(--rood)  !important;
 }
