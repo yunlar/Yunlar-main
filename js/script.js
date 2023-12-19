@@ -10,8 +10,8 @@ if (/Mobi/.test(navigator.userAgent) && !/iPad/.test(navigator.userAgent)) {
 
   iconElement.classList.remove('hamburger-icon');
   iconElement.classList.add('hamburger-icon-mob');
-  
-  logoElement.src = "assets/logo/icon-white.svg";
+
+  logoElement.src = "../assets/logo/icon-white.svg";
   logoElement.classList.remove('logo');
   logoElement.classList.add('logo-mob');
 
