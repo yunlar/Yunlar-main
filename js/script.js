@@ -12,6 +12,8 @@ if (/Mobi/.test(navigator.userAgent) && !/iPad/.test(navigator.userAgent)) {
 
   logoElement.classList.remove('logo');
   logoElement.classList.add('logo-mob');
+
+  logoElement.src = "assets/logo/icon-white.svg";
 }
 
   const hamburgerIcon = document.querySelector('.hamburger-icon-mob');
