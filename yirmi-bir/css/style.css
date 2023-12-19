@@ -84,6 +84,7 @@ h2 {
   backdrop-filter: blur(20px);
   border: 1.5px solid var(--gray-70);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .target {
