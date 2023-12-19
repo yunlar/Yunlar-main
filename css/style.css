@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'LineFont';
+    src: url('../assets/fonts/line.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NormalFont';
+    src: url('../assets/fonts/normal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SimpleFont';
+    src: url('../assets/fonts/simple.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --none: #00000000;
+    --white: #ffffff;
+    --white-70: #ffffffba;
+    --white-50: #ffffff85;
+    --white-10: #ffffff30;
+    --black: #000000;
+    --black-70: #000000ba;
+    --black-50: #00000085;
+    --black-10: #00000030;
+    --gray: #4f4f4f;
+    --gray-70: #4f4f4fba;
+    --gray-50: #4f4f4f85;
+    --gray-10: #4f4f4f30;
+    --rood: #de2b65;
+    --rood-50: #de2b6585;
+    --orange: #eb7c19;
+    --orange-50: #eb7c1985;
+    --groen: #8abb2a;
+    --groen-50: #8abb2a85;
+    --donker-blouw: #8082b8;
+    --donker-blouw-50: #8082b885;
+
+
+    --font-line: 'LineFont';
+    --font-normal: 'NormalFont';
+    --font-simple: 'SimpleFont';
+}
+
+* {
+    shape-rendering: crispEdges;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+}
+
+.image-stack {
+    margin-top: 20vh;
+    position: relative;
+    width: 30vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stacked-image {
+    border-radius: 5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.60020131s ease;
+    z-index: 1;
+}
+
+.image-stack .stacked-image:nth-child(1) {
+    transform: translateX(-4vw);
+    z-index: 2;
+}
+
+.image-stack .stacked-image:nth-child(2) {
+    transform: translateX(-2vw); 
+    z-index: 3;
+}
+
+.image-stack .stacked-image:nth-child(3) {
+    z-index: 4;
+}
+
+.image-stack .stacked-image:nth-child(4) {
+    transform: translateX(2vw);
+    z-index: 3;
+}
+
+.image-stack .stacked-image:nth-child(5) {
+    transform: translateX(4vw);
+    z-index: 2;
+}
+
+
+.image-stack:hover .stacked-image:nth-child(1) {
+    transform: translateX(-30vw);
+    z-index: 2;
+}
+
+.image-stack:hover .stacked-image:nth-child(2) {
+    transform: translateX(-15vw);
+    z-index: 3;
+}
+
+.image-stack:hover .stacked-image:nth-child(3) {
+    z-index: 4;
+}
+
+.image-stack:hover .stacked-image:nth-child(4) {
+    transform: translateX(15vw);
+    z-index: 3; 
+}
+
+.image-stack:hover .stacked-image:nth-child(5) {
+    transform: translateX(30vw);
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label {
+    font-size: 100000000px;
+  }
+  
+  .hamburger-menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: transparent;
+    background-color: var(--black-70);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  }
+  
+  .menu-items {
+    list-style: none;
+    margin: 0;
+    top: 0;
+    width: auto;
+    display: flex;
+    z-index: 1;
+    transition: left 0.5s ease-in-out;
+    flex-direction: row;
+    height: auto;
+  }
+  
+  .menu-items li {
+    padding: 10px;
+    border-radius: 20px;
+    padding-right: 10px;
+    margin: 0 10px 0 10px;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: omnium, sans-serif;
+    font-size: 30pt;
+    font-size: 100%;
+    font-weight: 600;
+    transition: all ease-in-out 100ms;
+  }
+  
+  .menu-items a:hover {
+    font-weight: bold;
+  }
+  
+  .item1-on {
+    background-color: var(--rood);
+    margin-right: 10px;
+  }
+  
+  .item2-on {
+    background-color: var(--orange);
+    margin-right: 10px;
+  }
+  
+  .item3-on {
+    background-color: var(--groen);
+    margin-right: 10px;
+  }
+  
+  .item4-on {
+    background-color: var(--donker-blouw);
+    margin-right: 10px;
+  }
+
+  .item1:hover {
+    background-color: var(--rood-50);
+    margin-right: 10px;
+  }
+  
+  .item2:hover {
+    background-color: var(--orange-50);
+    margin-right: 10px;
+  }
+  
+  .item3:hover {
+    background-color: var(--groen-50);
+    margin-right: 10px;
+  }
+  
+  .item4:hover {
+    background-color: var(--donker-blouw-50);
+    margin-right: 10px;
+  }
+  
+  .hamburger-icon {
+    display: none;
+  }
+    
+  .blur-middle {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  .logo {
+    position: relative;
+    height: 40px;
+    margin-bottom: -5px;
+  }
+  
+  .logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+  }
+
+  .hamburger-icon-mob {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .bar {
+    width: 40px;
+    height: 5px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .hamburger-icon-mob.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 11px);
+  }
+  
+  .hamburger-icon-mob.active .bar:nth-child(2) {
+    transform: scaleX(0);
+  }
+  
+  .hamburger-icon-mob.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -11px);
+  }
+  
+  .menu-items-mob {
+    list-style: none;
+    padding-left: 1vw;
+    padding-top: 40px;
+    margin: 0;
+    position: fixed;
+    top: 75px;
+    left: -130vw;
+    width: auto;  
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: left 0.5s ease-in-out;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(1.8) blur(20px);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 150px;
+  }
+
+  .menu-items-mob.active {
+    left: 0;
+  }
+
+  .menu-items-mob li {
+    padding: 30px;
+    border-radius: 20px;
+    padding-right: 100px;
+  }
+
+  .menu-items-mob a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: omnium, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+  }
+
+  .logo-mob {
+    position: relative;
+    height: 50px;
+    margin-left: 10vw;
+    padding-right: 10px;
+  }
+  
+  .logo-mob::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
