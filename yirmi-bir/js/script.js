@@ -18,18 +18,26 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-  var targets = document.querySelectorAll('.target');
+  var targets = document.querySelectorAll('.target, .info');
+  var isClicked = false;
+
   targets.forEach(function(target) {
     target.addEventListener('click', function() {
-      this.classList.toggle('target-clicked');
+      if (isClicked && !this.classList.contains('target-clicked') && !this.classList.contains('info-clicked')) {
+        return;
+      }
+
+      this.classList.toggle(this.classList.contains('target') ? 'target-clicked' : 'info-clicked');
       var newText = this.getAttribute('data-new-text');
       var textElement = this.parentElement.nextElementSibling.querySelector('p');
-      if (this.classList.contains('target-clicked')) {
+      if (this.classList.contains('target-clicked') || this.classList.contains('info-clicked')) {
         this.setAttribute('data-original-text', textElement.textContent);
         textElement.textContent = newText;
+        isClicked = true;
       } else {
         var originalText = this.getAttribute('data-original-text');
         textElement.textContent = originalText;
+        isClicked = false;
       }
     });
   });
