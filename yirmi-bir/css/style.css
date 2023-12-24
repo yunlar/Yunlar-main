@@ -95,6 +95,7 @@ h2 {
   background-color: transparent;
   box-shadow: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .target-clicked {
@@ -111,6 +112,7 @@ h2 {
   background-color: transparent;
   box-shadow: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .info-clicked {
