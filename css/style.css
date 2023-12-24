@@ -88,13 +88,13 @@ body {
 
 
 .image-stack:hover .stacked-image:nth-child(1) {
-    transform: translateX(-30vw);
+    transform: translateX(-20vw);
     z-index: 2;
     transition-delay: 0.05s;
 }
 
 .image-stack:hover .stacked-image:nth-child(2) {
-    transform: translateX(-15vw);
+    transform: translateX(-10vw);
     z-index: 3;
 }
 
@@ -103,12 +103,12 @@ body {
 }
 
 .image-stack:hover .stacked-image:nth-child(4) {
-    transform: translateX(15vw);
+    transform: translateX(10vw);
     z-index: 3; 
 }
 
 .image-stack:hover .stacked-image:nth-child(5) {
-    transform: translateX(30vw);
+    transform: translateX(20vw);
     z-index: 2;
     transition-delay: 0.05s;
 }
