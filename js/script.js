@@ -14,8 +14,6 @@ if (/Mobi/.test(navigator.userAgent) && !/iPad/.test(navigator.userAgent)) {
   logoElement.src = "https://yunlarstudio.com/assets/logo/icon-white.svg";
   logoElement.classList.remove('logo');
   logoElement.classList.add('logo-mob');
-
-  
 }
 
   const hamburgerIcon = document.querySelector('.hamburger-icon-mob');

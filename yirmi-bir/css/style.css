@@ -135,3 +135,40 @@ h2 {
   margin: 20px;
   border-radius: 9999999999px;
 }
+
+.faq {
+  margin-top: 50px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background-color: var(--gray-70);
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.arrow {
+  margin-right: 10px;
+  transition: transform 0.2s ease-out;
+  font-weight: bolder;
+  font-family: omnium, sans-serif;
+  font-size: 25px;
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
