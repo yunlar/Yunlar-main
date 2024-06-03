@@ -31,6 +31,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--black);
+    font-family: omnium, sans-serif;
 }
 
 .image-stack {
@@ -88,29 +89,34 @@ body {
 
 
 .image-stack:hover .stacked-image:nth-child(1) {
-    transform: translateX(-20vw);
-    z-index: 2;
-    transition-delay: 0.05s;
+  transform: translateX(-20vw);
+  z-index: 2;
+  transition-delay: 0.05s;
+  box-shadow: 0 0 50px var(--donker-blouw); /* Voeg box-shadow toe */
 }
 
 .image-stack:hover .stacked-image:nth-child(2) {
-    transform: translateX(-10vw);
-    z-index: 3;
+  transform: translateX(-10vw);
+  z-index: 3;
+  box-shadow: 0 0 50px var(--rood); /* Voeg box-shadow toe */
 }
 
 .image-stack:hover .stacked-image:nth-child(3) {
-    z-index: 4;
+  z-index: 4;
+  box-shadow: 0 0 50px var(--gray); /* Voeg box-shadow toe */
 }
 
 .image-stack:hover .stacked-image:nth-child(4) {
-    transform: translateX(10vw);
-    z-index: 3; 
+  transform: translateX(10vw);
+  z-index: 3;
+  box-shadow: 0 0 50px var(--groen); /* Voeg box-shadow toe */
 }
 
 .image-stack:hover .stacked-image:nth-child(5) {
-    transform: translateX(20vw);
-    z-index: 2;
-    transition-delay: 0.05s;
+  transform: translateX(20vw);
+  z-index: 2;
+  transition-delay: 0.05s;
+  box-shadow: 0 0 50px var(--orange); /* Voeg box-shadow toe */
 }
 
 .buy {
@@ -128,6 +134,61 @@ body {
     display: flex;
     justify-content: center;
     font-size: 10vw;
+}
+
+
+/* De modal (achtergrond) */
+.modal {
+  display: none; /* Verborgen standaard */
+  position: fixed; /* Blijft op dezelfde plek */
+  z-index: 99; /* Ligt bovenop alles */
+  padding-top: 100px; /* Locatie van de box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Volledige breedte */
+  height: 100%; /* Volledige hoogte */
+  overflow: auto; /* Maakt scrollen mogelijk als nodig */
+  background-color: rgb(0,0,0); /* Achtergrondkleur */
+  background-color: rgba(0,0,0,0.4); /* Achtergrondkleur met zwarte waas */
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+/* Modal Content (witte box) */
+.modal-content {
+  background-color: var(--white-50);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  margin: auto;
+  /* margin-left: 50%; */
+  margin-top: 20%;
+  /* transform: translate(-50%, -200%); */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 2rem;
+  font-size: .5em;
+}
+
+/* De sluitknop */
+.close {
+  color: #000000;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+.disclamer {
+  font-size: .4em;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 

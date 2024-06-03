@@ -69,7 +69,20 @@
       </div>
 
       <div class="center">
-          <a class="buy" href="mailto:yunlarstudio@gmail.com?subject=Yirmi%20Bir%20kopen&body=Ik%20wil%20graag%20Yirmi%20Bir%20kopen. Dit%20is%20mijn%20naam:"><button style="all: unset;">buy</button></a>
+        <!-- De link die de modal opent -->
+        <a class="buy" href="#" onclick="openModal(); return false;"><button style="all: unset;">Pre-order</button></a>
+
+        <!-- De modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>We bieden op dit moment een pre-order mogelijkheid voor ons kaartspel. Klik op de knop hieronder om ons een e-mail te sturen. Binnen een week ontvang je van ons een e-mail terug met de exacte prijs van het spel en een betaal link.
+                  <br>
+                  <b>Verwachte prijs: *€14,99</b></p>
+                <p class="disclamer">*Prijs kan afwijken van de verwachte prijs. Prijs is exclusief verzendkosten.</p>
+                <a href="mailto:yunlarstudio@gmail.com?subject=Yirmi%20Bir%20kopen&body=Ik%20wil%20graag%20Yirmi%20Bir%20kopen. Dit%20is%20mijn%20naam:">Stuur een mail</a>
+            </div>
+        </div>
       </div>
 
 
@@ -90,14 +103,15 @@
           </div>
           <div class="footer-social">
             <a href="https://whatsapp.com/channel/0029VaGJ4bFKGGGK3X55RG1j"><img src="/assets/icons/whatapp.svg" alt="Whatapp"></a>
-            <a href="https://www.instagram.com/yunlarstudio?igsh=MWd6MXl2ajFmamtzbw=="><img src="/assets/icons/insta.svg" alt="Insta"></a>
-            <a href="#"><img src="/assets/icons/github.svg" alt="Github"></a>
-            <a href="#"><img src="/assets/icons/x.svg" alt="X"></a>
+            <a href="https://instagram.com/yunlarstudio"><img src="/assets/icons/insta.svg" alt="Insta"></a>
+            <a href="https://github.com/yunlar"><img src="/assets/icons/github.svg" alt="Github"></a>
+            <a href="https://x.com/YunlarStudio"><img src="/assets/icons/x.svg" alt="X"></a>
           </div>
         </div>
       </footer>
 
 
       <script src="js/script.js"></script>
+      <script src="js/modal.js"></script>
   </body>
 </html>
